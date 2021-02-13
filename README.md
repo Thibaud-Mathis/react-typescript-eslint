@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic boilerplate using create-react-app, typescript and sass. Eslint dependencies are all included and working with prettier, enjoy ;)
 
 ## Available Scripts
 
@@ -39,8 +39,47 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn lint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This should show the linting error in the console.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn format`
+
+Format the file using prettier
+
+### Disable unwanted eslint config using comment
+
+#### Js/ts files
+
+```js
+// eslint-disable no-console, no-param-reassign _/ For one or multiple lines
+// eslint-disable-next-line no-console_/ For next line
+```
+
+#### jsx
+
+```jsx
+{
+  /* eslint-disable no-console, no-param-reassign _/ For one or multiple lines */
+}
+{
+  /* eslint-disable-next-line no-console_/ For next line */
+}
+```
+
+### Enable auto formating in VSCode
+
+```json
+// .vscode/settings.json
+{
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
