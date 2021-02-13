@@ -1,29 +1,16 @@
 import React from 'react';
 import './App.scss';
+import { SignInForm } from '../SignInForm';
 
-function App() {
+const App: React.FC = () => {
+  console.log('hop');
   return (
     <div className="App">
       <main className="App-main">
-        <form>
-          <h1>Sign in</h1>
-          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-          <label htmlFor="inputEmail">Email</label>
-          <input type="email" id="inputEmail" placeholder="email..." required />
-
-          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-          <label htmlFor="inputPassword">Password</label>
-          <input
-            type="password"
-            id="inputPassword"
-            placeholder="password..."
-            required
-          />
-          <button type="button">Sign in</button>
-        </form>
+        <SignInForm />
       </main>
     </div>
   );
-}
+};
 
 export default App;

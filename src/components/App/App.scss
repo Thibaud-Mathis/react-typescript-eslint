@@ -1,4 +1,51 @@
+body {
+    background: rgb(24, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .App-main {
-  display: flex;
-  background: red;
+    color: rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+        border-radius: 10px;
+        background: rgb(22, 22, 22);
+        padding: 1em;
+
+        & label {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        & input {
+            width: 275px;
+            border-radius: 10px;
+            border: none;
+            padding: 1em;
+            margin-bottom: 1em;
+            background: rgba(129, 129, 129, 0.644);
+
+            &::placeholder {
+                color: rgb(37, 37, 37);
+            }
+        }
+
+        & button {
+            width: 300px;
+            padding: 1em;
+            border: none;
+            background: rgb(207, 83, 52);
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            margin-top: 1em;
+        }
+    }
 }
