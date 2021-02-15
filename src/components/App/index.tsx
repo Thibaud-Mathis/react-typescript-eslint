@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.scss';
 import { SignInForm } from '../SignInForm';
+import Todo from '../Todo';
 
-const App: React.FC = () => {
-  console.log('hop');
-  return (
-    <div className="App">
-      <main className="App-main">
-        <SignInForm />
-      </main>
-    </div>
-  );
-};
+const App: React.FC = () => (
+  <div className="App">
+    <main className="">
+      <Todo />
+    </main>
+  </div>
+);
 
 export default App;
